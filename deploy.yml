@@ -1,5 +1,5 @@
 ---
-  - hosts: all
+  - hosts: localhost
     become: true
     tasks:
     - name: Make sure that we can connect to the machine-ip
