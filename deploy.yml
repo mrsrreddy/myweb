@@ -7,6 +7,8 @@
       register: command_result
       failed_when: "'FAILED' in command_result.stderr"
     - name: Run The shell script
+      become: yes
+      become_user: root
       copy:
          src: /opt/artifacts/pipelines/project/11/package/1/package/pkg/target/myweb-6.0.0-SNAPSHOT.war
          dest: /home/ec2-user/tomcat8/webapps/
