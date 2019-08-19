@@ -1,6 +1,7 @@
 ---
   - hosts: 127.0.0.1
     become: true
+    become_method: sudo
     tasks:
     - name: Make sure that we can connect to the machine-ip
       command: hostname
