@@ -1,6 +1,6 @@
 ---
   - hosts: localhost
-  .  become_method: sudo
+  . become_method: sudo
     tasks:
     - name: Make sure that we can connect to the machine-ip
       command: hostname
