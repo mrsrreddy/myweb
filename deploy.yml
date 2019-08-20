@@ -1,5 +1,5 @@
 ---
-  - hosts: all
+  - hosts: demo
     become_method: sudo
     tasks:
     - name: Make sure that we can connect to the machine-ip
