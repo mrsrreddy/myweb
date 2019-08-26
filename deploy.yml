@@ -8,5 +8,5 @@
       failed_when: "'FAILED' in command_result.stderr"
     - name: Run The shell script
       copy:
-         src: /opt/artifacts/pipelines/hello/8/pack/1/pack/pakage/target/myweb-6.0.0-SNAPSHOT.war
+         src: /opt/artifacts/pipelines/kushbu1/7/package/1/pakage/pack/target/myweb-6.0.0-SNAPSHOT.war
          dest: /home/ec2-user/tomcat8/webapps
